@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>登録者一覧画面</title>
+</head>
+
+<body>
+	<h1>登録完了画面</h1>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Password</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td th:text="${user.id}"></td>
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.password}"></td>
+			</tr>
+		</tbody>
+	</table>
+	<a href="/"><button type="button">戻る</button></a>
+</body>
+</html>

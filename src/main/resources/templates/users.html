@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登録者一覧画面</title>
+</head>
+<body>
+	<h1>登録者個人情報一覧画面</h1>
+	    <table border="1">
+	        <thead>
+	            <tr>
+	                <th>ID</th>
+	                <th>Name</th>
+	                <th>Password</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr th:each="user : ${users}">
+	                <td th:text="${user.id}"></td>
+	                <td th:text="${user.name}"></td>
+	                <td th:text="${user.password}"></td>
+	            </tr>
+	        </tbody>
+	    </table>
+</body>
+</html>

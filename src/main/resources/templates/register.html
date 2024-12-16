@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ログイン画面</title>
+</head>
+
+<body>
+	<h1>ログイン画面</h1>
+	<!-- 写真を追加 -->
+		<div>
+			<img src="/image/login_image.webp " alt="ログイン画面イメージ" style="width: 300px; height: auto; display: block; margin-bottom: 20px;">
+		</div>
+	<form action="/register" method="post">
+		お名前:
+		<input type="text" name="name"> 
+		<p th:text="${message}"></p>
+		パスワード:
+		<input type="password" name="password"><br>
+		<button type="submit" name="action" value="register0">新規登録</button><br>
+		<button type="submit" name="action" value="login">ログイン</button>
+	</form>
+</body>
+
+</html>
