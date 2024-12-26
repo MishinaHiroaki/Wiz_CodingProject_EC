@@ -11,12 +11,17 @@
 	<form action="/edit-password" method="post">
 		現在のパスワード:
 		<input type="password" name="oldpassword"><br>
+
+		<p th:text="${message}"></p>
+
 		新しいパスワード:
 		<input type="password" name="password"><br>
 
 
 		<button type="submit" name="action">変更</button>
-		<a href="/"><button type="button">戻る</button></a>
+
+		<a href="/dashbord"><button type="button">戻る</button></a>
+
 
 	</form>
 </body>

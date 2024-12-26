@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ログイン成功</title>
+</head>
+
+<body>
+	<h2>dashbord画面(ログイン成功)</h2>
+	<img src="/image/login_image2.webp " alt="ログイン画面イメージ" style="width: 300px; height: auto; display: block; margin-bottom: 20px;">
+	<a href="/logout"><button type="button">ログアウト</button></a>
+	<!-- パスワード編集ボタン -->
+	<!--<a href="/edit?token=${editToken}"><button type="button">パスワード編集</button></a>-->
+	
+	<form action="/edit" method="GET">
+	    <input type="hidden" name="token" th:value="${editToken}">
+	    <button type="submit">パスワード編集</button>
+	</form>
+</body>
+</html>
